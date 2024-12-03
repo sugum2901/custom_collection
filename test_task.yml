@@ -1,1 +1,8 @@
-
+---
+- name: test config
+  ansible.builtin.template:
+    src: users.conf
+    dest: /etc/motd
+    owner: root
+    group: root
+    mode: "0777"
